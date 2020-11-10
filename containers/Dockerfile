@@ -21,3 +21,5 @@ pip3 install -r requirements.txt
 WORKDIR /root/kraken
 
 ENTRYPOINT python3 run_kraken.py --config=config/config.yaml
+RUN chmod 775 /root/kraken/kraken.report
+
